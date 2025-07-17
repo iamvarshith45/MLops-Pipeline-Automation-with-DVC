@@ -1,0 +1,12 @@
+strict digraph {
+"data_ingestion";
+"data_preprocessing";
+"feature_engineering";
+"model_building";
+"model_evaluation";
+"data_ingestion" -> "data_preprocessing";
+"data_preprocessing" -> "feature_engineering";
+"feature_engineering" -> "model_building";
+"model_building" -> "model_evaluation";
+}
+
